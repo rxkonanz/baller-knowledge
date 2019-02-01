@@ -1,0 +1,34 @@
+#question {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+}
+.col-sm-3 {
+    display: inline-block;
+    height: 200px;
+    width: 20%;
+}
+
+#lebronjames{
+    background-image: url('../img/players/lebronjames.png');
+    background-size: cover;
+}
+#anthonydavis {
+    background-image: url('../img/players/anthonydavis.png');
+    background-size: cover;
+}
+#jamesharden {
+    background-image: url('../img/players/jamesharden.png');
+    background-size: cover;
+}
+#stephcurry {
+    background-image: url('../img/players/stephcurry.png');
+    background-size: cover;
+}
+#russellwestbrook {
+    background-image: url('../img/players/russellwestbrook.png');
+    background-size: cover;
+}
