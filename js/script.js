@@ -1,16 +1,12 @@
-let questions = ["Who won last Eastern Conference Finals?", 
-"Led by who?", "Who has how many rings?", "Which is currently worn by:", "Who was drafted by:", 
-"Who\'s Point Guard is:", "Who is from Bronx, NY just like:", "Who was drafted in:", "With the pick number:", 
-"5 picks after:", "Who was drafted by:", "Exactly one year after 1st overall pick:", 
-"Who was born in Australia just like:", "Who was traded to:", "After winning how many rings with the Cavaliers?", 
-"Joining Utah Jazz star player:", "Who had a season ending injury during 2017-2018 season just like:", 
-"Who got traded to:", "After leaving which team:", "And which other All Star player:", 
-"Who has been to the finals how many times:", "Just like 2018\’s MVP:", "Who has been an All Star how many times:", 
-"Which is currently worn by:"];
+let questions = ["Who won last Eastern Conference Finals?", "Led by who?", "Who has how many rings?", "Which is currently worn by:", 
+"Who was drafted by:", "Who’s Point Guard is:", "Who also drafted:", "Who went to school with:", "Who was traded to the Pacers from:", 
+"Where he was teammates with former MVP:", "Who was teammates in UCLA with:", "Who was traded from:", "Where he played how many years:", 
+"Which is the same number of rings *answer* has:", "Who had the youngest MVP ever:", "But not unanimous like:", "Who’s splash brother is:", 
+"Who went to Washington State like:", "Who grew up in Australia like:"];
 
-let correctAnswers = ["nbalogo", "cavaliers", "lebronjames", "3", "chris paul", "hornets", "kembawalker", "jonathanisaac", 
-"2017", "6", "markellefultz", "sixers", "bensimmons", "kyrieirving", "celtics", "1", "gordonhayward", "demarcuscousins", 
-"warriors", "pelicans", "anthonydavis", "0", "jamesharden", "7", "carmeloanthony"];
+let correctAnswers = ["nbalogo", "cavaliers", "lebronjames", "three", "chrispaul", "hornets", "kembawalker", "codyzeller", 
+"victoroladipo", "thunder", "russellwestbrook", "kevinlove", "timberwolves", "six", "bulls", "derrickrose", "stephencurry",
+"klaythompson", "aronbaynes", "bensimmons"];
 
 var currentQuestion = 0;
 var currentAnswer = 0; 
