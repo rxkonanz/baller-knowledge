@@ -2,14 +2,40 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-
+#question-div {
+    background-color: blue;
+    height: 150px;
+    text-align: center;
+}
+.container {
+    text-align: center;
+}
 .row{
     display: flex;
 }
-.col-sm-3 {
+.col-sm-3, .col-xs-3 {
     display: inline-block;
-    height: 200px;
-    width: 20%;
+    height: 100px;
+    margin: 10px 0;
+    width: 12.5%;
+}
+.clicked {
+    opacity: 0.3;
+}
+#logo-div {
+    display: flex;
+    justify-content: center;
+}
+#ender-statement{
+    margin-top: 40px;
+}
+#ender-img {
+    height: 500px;
+    width: auto;
+}
+#ender-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* NBA Logo */
@@ -27,7 +53,10 @@
     background: url('../img/numbers/one.png') no-repeat center;
     background-size: contain;
 }
-
+#two{
+    background: url('../img/numbers/two.png') no-repeat center;
+    background-size: contain;
+}
 #three{
     background: url('../img/numbers/three.png') no-repeat center;
     background-size: contain;
@@ -38,6 +67,14 @@
 }
 #seven{
     background: url('../img/numbers/seven.png') no-repeat center;
+    background-size: contain;
+}
+#eight{
+    background: url('../img/numbers/eight.png') no-repeat center;
+    background-size: contain;
+}
+#ten{
+    background: url('../img/numbers/ten.png') no-repeat center;
     background-size: contain;
 }
 
@@ -58,8 +95,20 @@
     background: url('../img/teams/hornets.png') no-repeat center;
     background-size: contain;
 }
+#knicks{
+    background: url('../img/teams/knicks.png') no-repeat center;
+    background-size: contain;
+}
+#lakers{
+    background: url('../img/teams/lakers.png') no-repeat center;
+    background-size: contain;
+}
 #pelicans{
     background: url('../img/teams/pelicans.png') no-repeat center;
+    background-size: contain;
+}
+#spurs{
+    background: url('../img/teams/spurs.png') no-repeat center;
     background-size: contain;
 }
 #thunder{
@@ -73,70 +122,150 @@
 
 /* NBA Players */
 #anthonydavis {
-    background-image: url('../img/players/anthonydavis.png');
-    background-size: cover;
+    background: url('../img/players/anthonydavis.png') no-repeat center;
+    background-size: contain;
 }
 #aronbaynes {
-    background-image: url('../img/players/aronbaynes.png');
-    background-size: cover;
+    background: url('../img/players/aronbaynes.png') no-repeat center;
+    background-size: contain;
 }
 #bensimmons {
-    background-image: url('../img/players/bensimmons.png');
-    background-size: cover;
+    background: url('../img/players/bensimmons.png') no-repeat center;
+    background-size: contain;
+}
+#carmeloanthony {
+    background: url('../img/players/carmeloanthony.png') no-repeat center;
+    background-size: contain;
 }
 #chrispaul {
-    background-image: url('../img/players/chrispaul.png');
-    background-size: cover;
+    background: url('../img/players/chrispaul.png') no-repeat center;
+    background-size: contain;
 }
 #codyzeller {
-    background-image: url('../img/players/codyzeller.png');
-    background-size: cover;
+    background: url('../img/players/codyzeller.png') no-repeat center;
+    background-size: contain;
+}
+#deandreayton {
+    background: url('../img/players/deandreayton.png') no-repeat center;
+    background-size: contain;
+}
+#demarderozan {
+    background: url('../img/players/demarderozan.png') no-repeat center;
+    background-size: contain;
 }
 #derrickrose {
-    background-image: url('../img/players/derrickrose.png');
-    background-size: cover;
+    background: url('../img/players/derrickrose.png') no-repeat center;
+    background-size: contain;
+}
+#devinbooker {
+    background: url('../img/players/devinbooker.png') no-repeat center;
+    background-size: contain;
+}
+#dirknowitzki {
+    background: url('../img/players/dirknowitzki.png') no-repeat center;
+    background-size: contain;
+}
+#donovanmitchell {
+    background: url('../img/players/donovanmitchell.png') no-repeat center;
+    background-size: contain;
+}
+#dwyanewade {
+    background: url('../img/players/dwyanewade.png') no-repeat center;
+    background-size: contain;
+}
+#giannis {
+    background: url('../img/players/giannis.png') no-repeat center;
+    background-size: contain;
+}
+#malcolmbrogdon {
+    background: url('../img/players/malcolmbrogdon.png') no-repeat center;
+    background-size: contain;
+}
+#markcuban {
+    background: url('../img/players/markcuban.jpeg') no-repeat center;
+    background-size: contain;
 }
 #gordonhayward {
-    background-image: url('../img/players/gordonhayward.png');
-    background-size: cover;
+    background: url('../img/players/gordonhayward.png') no-repeat center;
+    background-size: contain;
 }
 #jamesharden {
-    background-image: url('../img/players/jamesharden.png');
-    background-size: cover;
+    background: url('../img/players/jamesharden.png') no-repeat center;
+    background-size: contain;
+}
+#joelembiid {
+    background: url('../img/players/joelembiid.png') no-repeat center;
+    background-size: contain;
 }
 #jonathanisaac {
-    background-image: url('../img/players/jonathanisaac.png');
-    background-size: cover;
+    background: url('../img/players/jonathanisaac.png') no-repeat center;
+    background-size: contain;
+}
+#justicewinslow {
+    background: url('../img/players/justicewinslow.png') no-repeat center;
+    background-size: contain;
+}
+#kawhileonard {
+    background: url('../img/players/kawhileonard.png') no-repeat center;
+    background-size: contain;
 }
 #kembawalker {
-    background-image: url('../img/players/kembawalker.png');
-    background-size: cover;
+    background: url('../img/players/kembawalker.png') no-repeat center;
+    background-size: contain;
 }
 #kevinlove {
-    background-image: url('../img/players/kevinlove.png');
-    background-size: cover;
+    background: url('../img/players/kevinlove.png') no-repeat center;
+    background-size: contain;
 }
 #klaythompson {
-    background-image: url('../img/players/klaythompson.png');
-    background-size: cover;
+    background: url('../img/players/klaythompson.png') no-repeat center;
+    background-size: contain;
+}
+#kobebryant {
+    background: url('../img/players/kobebryant.png') no-repeat center;
+    background-size: contain;
+}
+#kristapsporzingis {
+    background: url('../img/players/kristapsporzingis.png') no-repeat center;
+    background-size: contain;
+}
+#kylelowry {
+    background: url('../img/players/kylelowry.png') no-repeat center;
+    background-size: contain;
 }
 #lebronjames{
-    background-image: url('../img/players/lebronjames.png');
-    background-size: cover;
+    background: url('../img/players/lebronjames.png') no-repeat center;
+    background-size: contain;
+}
+#lukadoncic {
+    background: url('../img/players/lukadoncic.png') no-repeat center;
+    background-size: contain;
 }
 #markellefultz {
-    background-image: url('../img/players/markellefultz.png');
-    background-size: cover;
+    background: url('../img/players/markellefultz.png') no-repeat center;
+    background-size: contain;
+}
+#pascalsiakam {
+    background: url('../img/players/pascalsiakam.png') no-repeat center;
+    background-size: contain;
+}
+#paulgeorge {
+    background: url('../img/players/paulgeorge.png') no-repeat center;
+    background-size: contain;
 }
 #russellwestbrook {
-    background-image: url('../img/players/russellwestbrook.png');
-    background-size: cover;
+    background: url('../img/players/russellwestbrook.png') no-repeat center;
+    background-size: contain;
 }
 #stephcurry {
-    background-image: url('../img/players/stephcurry.png');
-    background-size: cover;
+    background: url('../img/players/stephcurry.png') no-repeat center;
+    background-size: contain;
 }
 #victoroladipo {
-    background-image: url('../img/players/victoroladipo.png');
-    background-size: cover;
+    background: url('../img/players/victoroladipo.png') no-repeat center;
+    background-size: contain;
+}
+#vincecarter {
+    background: url('../img/players/vincecarter.png') no-repeat center;
+    background-size: contain;
 }
