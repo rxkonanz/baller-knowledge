@@ -24,6 +24,7 @@
 }
 .row{
     display: flex;
+    justify-content: center;
 }
 
 /* IDs */
@@ -44,20 +45,6 @@
     background-color: blue;
     height: 150px;
     text-align: center;
-}
-#sticky {
-    background-color: white;
-    border-bottom: 2px solid red;
-    color: black;
-    display: none;
-    height: 70px;
-    text-align: center;
-}
-#sticky.fixed {
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 /* NBA Logo */

@@ -48,7 +48,7 @@ $(document).ready(function() {
             $('#sticky').removeClass('fixed');
         }
     });
-    $(".col-xs-3").click(function(e){
+    $(".selection").click(function(e){
         var id = $(this).attr("id");
         if(id==correctAnswers[currentAnswer]){
             if(id==correctAnswers[correctAnswers.length-1]){
