@@ -20,18 +20,33 @@ let correctAnswers = ["nbalogo", "cavaliers", "lebronjames", "three", "chrispaul
 "dwyanewade", "dirknowitzki", "vincecarter", "donovanmitchell"];
 
 var currentQuestion = 0;
-var currentAnswer = 0; 
+var currentAnswer = 0;
+var points = -1;
+var fouls = 0;
+var correct = new Audio();
+correct.src = "mp3/correct.mp3";
+var incorrect = new Audio();
+incorrect.src = "mp3/incorrect.mp3";
 
 function nextQuestion() {
-    $('#question').text(questions[currentQuestion]);
+    $('.question').text(questions[currentQuestion]);
     currentQuestion++;
     currentAnswer++;
+    points++;
+    $("#points").text("Points: " + points);
 }
-
 $(document).ready(function() {
     $("#next-question").click(function(e){
         $('#question').text(questions[currentQuestion]);
         currentQuestion++;
+    });
+    $(window).scroll(function() {
+        var distanceFromTop = $(this).scrollTop();
+        if (distanceFromTop >= 50) {
+            $('#sticky').addClass('fixed');
+        } else {
+            $('#sticky').removeClass('fixed');
+        }
     });
     $(".col-xs-3").click(function(e){
         var id = $(this).attr("id");
@@ -41,11 +56,19 @@ $(document).ready(function() {
             }
             else{
                 $(this).addClass("clicked");
+                correct.play();
                 nextQuestion();
             }
         }
         else{
-            window.location.replace("file:///Users/robertokonanz/Documents/Ironhack/project1/baller-knowledge/loser.html");
+            incorrect.play();
+            fouls++;
+            if(fouls>2){
+                window.location.replace("file:///Users/robertokonanz/Documents/Ironhack/project1/baller-knowledge/loser.html");
+            }
+            else {
+                $("#fouls").text("Fouls: " + fouls)
+            }
         }
         console.log(id);
     });    
