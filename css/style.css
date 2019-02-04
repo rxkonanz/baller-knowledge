@@ -5,16 +5,14 @@
 .container {
     text-align: center;
 }
-.col-xs-3 {
-    transition: transform .2s;
-}
-.col-sm-3, .col-xs-3 {
+.selection {
     display: inline-block;
     height: 100px;
     margin: 10px 0;
     width: 12.5%;
+    transition: transform .2s;
 }
-.col-xs-3:hover {
+.selection:hover {
     transform: scale(1.2);
 }
 .ender-statement{

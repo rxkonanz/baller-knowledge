@@ -1,5 +1,4 @@
 <html>
-    
     <head>
         <title>Baller Knowledge</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,70 +14,183 @@
         <div class="container" id="game">
             <h1 class="question">Press NBA Logo to start.</h1>
             <div id="logo-div">
-                <div id="nbalogo" class="col-xs-3"></div>
+                <div id="nbalogo" class="col-xs-3 selection"></div>
             </div>
             <p id="points"></p>
             <p id="fouls"></p>
+
             <div class="row">
-                <div id="zero" class="col-xs-3"></div>
-                <div id="one" class="col-xs-3"></div>
-                <div id="two" class="col-xs-3"></div>
-                <div id="three" class="col-xs-3"></div>
-                <div id="six" class="col-xs-3"></div>
-                <div id="seven" class="col-xs-3"></div>
-                <div id="eight" class="col-xs-3"></div>
-                <div id="ten" class="col-xs-3"></div>
+                <div class="col-lg-6">
+                      <div class="row">
+                          <div class="col-md-3 selection" id="zero"></div>
+                          <div class="col-md-3 selection" id="one"></div>
+                          <div class="col-md-3 selection" id="two"></div>
+                          <div class="col-md-3 selection" id="three"></div>
+                    </div>
+              </div> 
+              <div class="col-lg-6">
+                      <div class="row">
+                          <div class="col-md-3 selection" id="six"></div>
+                          <div class="col-md-3 selection" id="seven"></div>
+                          <div class="col-md-3 selection" id="eight"></div>
+                          <div class="col-md-3 selection" id="ten"></div>
+                    </div>
+              </div>
             </div>
             <div class="row">
-                <div id="hornets" class="col-xs-3"></div>
-                <div id="cavaliers" class="col-xs-3"></div>
-                <div id="bulls" class="col-xs-3"></div>
-                <div id="spurs" class="col-xs-3"></div>
-                <div id="thunder" class="col-xs-3"></div>
-                <div id="knicks" class="col-xs-3"></div>
-                <div id="timberwolves" class="col-xs-3"></div>
-                <div id="lakers" class="col-xs-3"></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="hornets"></div>
+                        <div class="col-md-3 selection" id="cavaliers"></div>
+                        <div class="col-md-3 selection" id="bulls"></div>
+                        <div class="col-md-3 selection" id="spurs"></div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="thunder"></div>
+                        <div class="col-md-3 selection" id="knicks"></div>
+                        <div class="col-md-3 selection" id="timberwolves"></div>
+                        <div class="col-md-3 selection" id="lakers"></div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div id="lebronjames" class="col-xs-3"></div>
-                <div id="anthonydavis" class="col-xs-3"></div>
-                <div id="bensimmons" class="col-xs-3"></div>
-                <div id="stephcurry" class="col-xs-3"></div>
-                <div id="donovanmitchell" class="col-xs-3"></div>
-                <div id="deandreayton" class="col-xs-3"></div>
-                <div id="chrispaul" class="col-xs-3"></div>
-                <div id="russellwestbrook" class="col-xs-3"></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="lebronjames"></div>
+                        <div class="col-md-3 selection" id="anthonydavis"></div>
+                        <div class="col-md-3 selection" id="bensimmons"></div>
+                        <div class="col-md-3 selection" id="stephcurry"></div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="donovanmitchell"></div>
+                        <div class="col-md-3 selection" id="deandreayton"></div>
+                        <div class="col-md-3 selection" id="chrispaul"></div>
+                        <div class="col-md-3 selection" id="russellwestbrook"></div>
+                    </div>
+                </div>
             </div>
+
             <div class="row">
-                <div id="malcolmbrogdon" class="col-xs-3"></div>
-                <div id="kylelowry" class="col-xs-3"></div>
-                <div id="kristapsporzingis" class="col-xs-3"></div>
-                <div id="codyzeller" class="col-xs-3"></div>
-                <div id="victoroladipo" class="col-xs-3"></div>
-                <div id="dwyanewade" class="col-xs-3"></div>
-                <div id="kawhileonard" class="col-xs-3"></div>
-                <div id="carmeloanthony" class="col-xs-3"></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="malcolmbrogdon"></div>
+                        <div class="col-md-3 selection" id="kylelowry"></div>
+                        <div class="col-md-3 selection" id="kristapsporzingis"></div>
+                        <div class="col-md-3 selection" id="codyzeller"></div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="victoroladipo"></div>
+                        <div class="col-md-3 selection" id="dwyanewade"></div>
+                        <div class="col-md-3 selection" id="kawhileonard"></div>
+                        <div class="col-md-3 selection" id="carmeloanthony"></div>
+                    </div>
+                </div>
             </div>
+
             <div class="row">
-                <div id="aronbaynes" class="col-xs-3"></div>
-                <div id="jamesharden" class="col-xs-3"></div>
-                <div id="vincecarter" class="col-xs-3"></div>
-                <div id="derrickrose" class="col-xs-3"></div>
-                <div id="kevinlove" class="col-xs-3"></div>
-                <div id="klaythompson" class="col-xs-3"></div>
-                <div id="kembawalker" class="col-xs-3"></div>
-                <div id="lukadoncic" class="col-xs-3"></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="aronbaynes"></div>
+                        <div class="col-md-3 selection" id="jamesharden"></div>
+                        <div class="col-md-3 selection" id="vincecarter"></div>
+                        <div class="col-md-3 selection" id="derrickrose"></div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="kevinlove"></div>
+                        <div class="col-md-3 selection" id="klaythompson"></div>
+                        <div class="col-md-3 selection" id="kembawalker"></div>
+                        <div class="col-md-3 selection" id="lukadoncic"></div>
+                    </div>
+                </div>
             </div>
+
             <div class="row">
-                <div id="devinbooker" class="col-xs-3"></div>
-                <div id="demarderozan" class="col-xs-3"></div>
-                <div id="giannis" class="col-xs-3"></div>
-                <div id="kobebryant" class="col-xs-3"></div>
-                <div id="pascalsiakam" class="col-xs-3"></div>
-                <div id="justicewinslow" class="col-xs-3"></div>
-                <div id="dirknowitzki" class="col-xs-3"></div>
-                <div id="joelembiid" class="col-xs-3"></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="devinbooker"></div>
+                        <div class="col-md-3 selection" id="demarderozan"></div>
+                        <div class="col-md-3 selection" id="giannis"></div>
+                        <div class="col-md-3 selection" id="kobebryant"></div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 selection" id="pascalsiakam"></div>
+                        <div class="col-md-3 selection" id="justicewinslow"></div>
+                        <div class="col-md-3 selection" id="dirknowitzki"></div>
+                        <div class="col-md-3 selection" id="joelembiid"></div>
+                    </div>
+                </div>
             </div>
+
+            <!-- <div class="row">
+                <div id="zero" class="col-xs-3 selection"></div>
+                <div id="one" class="col-xs-3 selection"></div>
+                <div id="two" class="col-xs-3 selection"></div>
+                <div id="three" class="col-xs-3 selection"></div>
+                <div id="six" class="col-xs-3 selection"></div>
+                <div id="seven" class="col-xs-3 selection"></div>
+                <div id="eight" class="col-xs-3 selection"></div>
+                <div id="ten" class="col-xs-3 selection"></div>
+            </div> -->
+            <!-- <div class="row">
+                <div id="hornets" class="col-xs-3 selection"></div>
+                <div id="cavaliers" class="col-xs-3 selection"></div>
+                <div id="bulls" class="col-xs-3 selection"></div>
+                <div id="spurs" class="col-xs-3 selection"></div>
+                <div id="thunder" class="col-xs-3 selection"></div>
+                <div id="knicks" class="col-xs-3 selection"></div>
+                <div id="timberwolves" class="col-xs-3 selection"></div>
+                <div id="lakers" class="col-xs-3 selection"></div>
+            </div> -->
+            <!-- <div class="row">
+                <div id="lebronjames" class="col-xs-3 selection"></div>
+                <div id="anthonydavis" class="col-xs-3 selection"></div>
+                <div id="bensimmons" class="col-xs-3 selection"></div>
+                <div id="stephcurry" class="col-xs-3 selection"></div>
+                <div id="donovanmitchell" class="col-xs-3 selection"></div>
+                <div id="deandreayton" class="col-xs-3 selection"></div>
+                <div id="chrispaul" class="col-xs-3 selection"></div>
+                <div id="russellwestbrook" class="col-xs-3 selection"></div>
+            </div> -->
+            <!-- <div class="row">
+                <div id="malcolmbrogdon" class="col-xs-3 selection"></div>
+                <div id="kylelowry" class="col-xs-3 selection"></div>
+                <div id="kristapsporzingis" class="col-xs-3 selection"></div>
+                <div id="codyzeller" class="col-xs-3 selection"></div>
+                <div id="victoroladipo" class="col-xs-3 selection"></div>
+                <div id="dwyanewade" class="col-xs-3 selection"></div>
+                <div id="kawhileonard" class="col-xs-3 selection"></div>
+                <div id="carmeloanthony" class="col-xs-3 selection"></div>
+            </div> -->
+            <!-- <div class="row">
+                <div id="aronbaynes" class="col-xs-3 selection"></div>
+                <div id="jamesharden" class="col-xs-3 selection"></div>
+                <div id="vincecarter" class="col-xs-3 selection"></div>
+                <div id="derrickrose" class="col-xs-3 selection"></div>
+                <div id="kevinlove" class="col-xs-3 selection"></div>
+                <div id="klaythompson" class="col-xs-3 selection"></div>
+                <div id="kembawalker" class="col-xs-3 selection"></div>
+                <div id="lukadoncic" class="col-xs-3 selection"></div>
+            </div> -->
+            <!-- <div class="row">
+                <div id="devinbooker" class="col-xs-3 selection"></div>
+                <div id="demarderozan" class="col-xs-3 selection"></div>
+                <div id="giannis" class="col-xs-3 selection"></div>
+                <div id="kobebryant" class="col-xs-3 selection"></div>
+                <div id="pascalsiakam" class="col-xs-3 selection"></div>
+                <div id="justicewinslow" class="col-xs-3 selection"></div>
+                <div id="dirknowitzki" class="col-xs-3 selection"></div>
+                <div id="joelembiid" class="col-xs-3 selection"></div>
+            </div> -->
         </div>
     </body>
 </html>
