@@ -32,9 +32,6 @@
     color: red;
     font-weight: bold;
 }
-#game {
-    border: 2px solid red;
-}
 #logo-div {
     display: flex;
     justify-content: center;
