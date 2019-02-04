@@ -1,4 +1,7 @@
 /* CLASSES */
+.body {
+    background-color: red;
+}
 .clicked {
     opacity: 0.3;
 }
