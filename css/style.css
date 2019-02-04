@@ -32,6 +32,9 @@
     color: red;
     font-weight: bold;
 }
+#game {
+    border: 2px solid red;
+}
 #logo-div {
     display: flex;
     justify-content: center;
@@ -277,4 +280,10 @@
 #vincecarter {
     background: url('../img/players/vincecarter.png') no-repeat center;
     background-size: contain;
+}
+
+@media only screen and (max-width: 600px) {
+    .selection {
+      width: 150;
+    }
 }
