@@ -52,7 +52,7 @@ $(document).ready(function() {
         var id = $(this).attr("id");
         if(id==correctAnswers[currentAnswer]){
             if(id==correctAnswers[correctAnswers.length-1]){
-                window.location.replace("file:///Users/robertokonanz/Documents/Ironhack/project1/baller-knowledge/winner.html");
+                window.location.replace("https://rxkonanz.github.io/baller-knowledge/winner.html");
             }
             else{
                 $(this).addClass("clicked");
@@ -64,7 +64,7 @@ $(document).ready(function() {
             incorrect.play();
             fouls++;
             if(fouls>2){
-                window.location.replace("file:///Users/robertokonanz/Documents/Ironhack/project1/baller-knowledge/loser.html");
+                window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
             }
             else {
                 $("#fouls").text("Fouls: " + fouls)
