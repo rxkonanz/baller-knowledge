@@ -3,10 +3,6 @@
     src: url('../font/digital-7/digital-7.ttf') format("truetype"); 
 }
 @import url('https://fonts.googleapis.com/css?family=Graduate');
-body {
-    background-color: #348CCC;
-    color: white;
-}
 
 /* CLASSES */
 .clicked {
@@ -54,7 +50,11 @@ body {
     display: flex;
     justify-content: center;
 }
+#points {
+    color: white;
+}
 #question {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 40px;
     text-align: center;
@@ -65,6 +65,7 @@ body {
     text-align: center;
 }
 #timer {
+    color: white;
     font-family: "Digital";
     font-size: 30px;
 }

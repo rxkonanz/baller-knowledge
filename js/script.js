@@ -73,9 +73,9 @@ $(document).ready(function() {
             incorrect.play();
             fouls++;
             if(fouls>2){
-                //window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
-                localStorage.setItem('points', toString(points));
-                window.location.replace("file:///Users/robertokonanz/Documents/Ironhack/project1/baller-knowledge/loser.html");
+                window.localStorage.setItem('points', points);
+                window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
+                //window.location.replace("file:///Users/robertokonanz/Documents/Ironhack/project1/baller-knowledge/loser.html");
             }
             else {
                 $("#fouls").text("Fouls: " + fouls)
