@@ -53,14 +53,6 @@ $(document).ready(function() {
         $('#question').text(questions[currentQuestion]);
         currentQuestion++;
     });
-    $(window).scroll(function() {
-        var distanceFromTop = $(this).scrollTop();
-        if (distanceFromTop >= 50) {
-            $('#sticky').addClass('fixed');
-        } else {
-            $('#sticky').removeClass('fixed');
-        }
-    });
     $(".selection").click(function(e){
         var id = $(this).attr("id");
         if(id==correctAnswers[currentAnswer]){

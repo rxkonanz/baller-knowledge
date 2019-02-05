@@ -1,6 +1,12 @@
+@font-face { 
+    font-family: "Digital"; 
+    src: url('../font/digital-7/digital-7.ttf') format("truetype"); 
+}
+@import url('https://fonts.googleapis.com/css?family=Graduate');
+
 /* CLASSES */
 body {
-    background-image: url('../img/background.jpg');
+    background-color: #348CCC;
     color: white;
 }
 .clicked {
@@ -31,11 +37,18 @@ body {
     display: flex;
     justify-content: center;
 }
+.toprow {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
 /* IDs */
 #fouls {
     color: red;
     font-weight: bold;
+}
+#game {
+    border-radius: 25%;
 }
 #logo-div {
     display: flex;
@@ -50,6 +63,10 @@ body {
     background-color: blue;
     height: 150px;
     text-align: center;
+}
+#timer {
+    font-family: "Digital";
+    font-size: 30px;
 }
 
 /* NBA Logo */
