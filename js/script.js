@@ -24,21 +24,25 @@ var currentAnswer = 0;
 var points = -1;
 var fouls = 0;
 var timeleft = 30;
-var correct = new Audio();
 var score = 0;
+let correct = new Audio();
 correct.src = "mp3/correct.mp3";
-var incorrect = new Audio();
+let incorrect = new Audio();
 incorrect.src = "mp3/incorrect.mp3";
+let timeInterval;
 
-var downloadTimer = setInterval(function(){
-    $('#timer').text("Shot Clock: " + timeleft);
-    timeleft -= 1;
-    if(timeleft <= 0){
-        clearInterval(downloadTimer);
-        alert("You ran out of time! Shoot your shot!");
-        window.location.reload(true);
-    }
-}, 1000);
+function downloadTimer() {
+    clearInterval(timeInterval);
+    timeInterval = setInterval(function(){
+        $('#timer').text("Shot Clock: " + timeleft);
+        timeleft -= 1;
+        if(timeleft <= 0){
+            incorrect.play();
+            alert("You ran out of time! Keep your eyes on the clock!");
+            window.location.reload(true);
+        }
+    }, 1000);
+}
 
 function nextQuestion() {
     $('#question').text(questions[currentQuestion]);
