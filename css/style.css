@@ -3,12 +3,12 @@
     src: url('../font/digital-7/digital-7.ttf') format("truetype"); 
 }
 @import url('https://fonts.googleapis.com/css?family=Graduate');
-
-/* CLASSES */
 body {
     background-color: #348CCC;
     color: white;
 }
+
+/* CLASSES */
 .clicked {
     opacity: 0.3;
 }
@@ -47,8 +47,8 @@ body {
     color: red;
     font-weight: bold;
 }
-#game {
-    border-radius: 25%;
+#game-page {
+    background-image: url('../img/background4.jpg');
 }
 #logo-div {
     display: flex;

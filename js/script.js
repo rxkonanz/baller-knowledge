@@ -68,6 +68,8 @@ $(document).ready(function() {
         else{
             incorrect.play();
             fouls++;
+            points = points - 2;
+            $("#points").text("Points: " + points);
             if(fouls>2){
                 window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
             }
