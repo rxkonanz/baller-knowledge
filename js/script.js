@@ -24,7 +24,6 @@ var currentAnswer = 0;
 var points = -1;
 var fouls = 0;
 var timeleft = 30;
-var score = 0;
 let correct = new Audio();
 correct.src = "mp3/correct.mp3";
 let incorrect = new Audio();
@@ -49,7 +48,6 @@ function nextQuestion() {
     currentQuestion++;
     currentAnswer++;
     points++;
-    score = points/48;
     $("#points").text("Points: " + points);
     timeleft = 30;
     downloadTimer();
@@ -74,11 +72,10 @@ $(document).ready(function() {
         else{
             incorrect.play();
             fouls++;
-            points = points - 2;
-            score = points/48;
-            $("#points").text("Points: " + points);
             if(fouls>2){
-                window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
+                //window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
+                localStorage.setItem('points', toString(points));
+                window.location.replace("file:///Users/robertokonanz/Documents/Ironhack/project1/baller-knowledge/loser.html");
             }
             else {
                 $("#fouls").text("Fouls: " + fouls)
@@ -86,5 +83,4 @@ $(document).ready(function() {
         }
         console.log(id);
     });
-    $('#score').text(score);
 });
