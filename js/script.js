@@ -1,7 +1,7 @@
 let questions = ["Who won the last Eastern Conference Finals?", "Led by who?", "Who has how many rings?", "Which is currently worn by which Point Guard:", 
 "Who was drafted by:", "Which moved to Charlotte and has Star Point Guard:", "Who also drafted:", "Who played for Indiana University with:", "Who was traded to the Pacers from:", 
 "Where he was teammates with former MVP:", "Who was teammates in UCLA with:", "Who was traded from:", "Where he played how many years:", 
-"Which is the same number of rings *answer* has:", "Who had the youngest MVP ever:", "But not unanimous like:", "Who\'s splash brother is:", 
+"Which is the same number of rings *answer* has:", "Who had the youngest MVP ever:", "But not unanimous like:", "Whose splash brother is:", 
 "Who went to Washington State like:", "Who grew up in Australia like:", "Who won ROY one year after:", "Who is teammates with the Greek Freak:",
 "Who is an NBA All-Star starter like Sixer\'s:", "Who is from Cameroon like:", "Who is teammates with former DPOY and Finals MVP:", 
 "Who got traded for:", "To the Raptors from the:", "To join 6ft Guard:", "Who wears the jersey #:", "Just like future Hall of Famer:",
