@@ -25,6 +25,7 @@ var points = -1;
 var fouls = 0;
 var timeleft = 30;
 var correct = new Audio();
+var score = 0;
 correct.src = "mp3/correct.mp3";
 var incorrect = new Audio();
 incorrect.src = "mp3/incorrect.mp3";
@@ -44,6 +45,7 @@ function nextQuestion() {
     currentQuestion++;
     currentAnswer++;
     points++;
+    score = points/48;
     $("#points").text("Points: " + points);
     timeleft = 30;
     downloadTimer();
@@ -57,7 +59,7 @@ $(document).ready(function() {
         var id = $(this).attr("id");
         if(id==correctAnswers[currentAnswer]){
             if(id==correctAnswers[correctAnswers.length-1]){
-                window.location.replace("https://rxkonanz.github.io/baller-knowledge/winner.html");
+                window.location.replace("https://youtu.be/InGtiEXQyF0?t=52");
             }
             else{
                 $(this).addClass("clicked");
@@ -69,6 +71,7 @@ $(document).ready(function() {
             incorrect.play();
             fouls++;
             points = points - 2;
+            score = points/48;
             $("#points").text("Points: " + points);
             if(fouls>2){
                 window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
@@ -78,5 +81,6 @@ $(document).ready(function() {
             }
         }
         console.log(id);
-    });    
+    });
+    $('#score').text(score);
 });
