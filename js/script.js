@@ -29,7 +29,7 @@ var incorrect = new Audio();
 incorrect.src = "mp3/incorrect.mp3";
 
 function nextQuestion() {
-    $('.question').text(questions[currentQuestion]);
+    $('#question').text(questions[currentQuestion]);
     currentQuestion++;
     currentAnswer++;
     points++;
