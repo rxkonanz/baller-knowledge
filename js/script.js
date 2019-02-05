@@ -1,5 +1,5 @@
-let questions = ["Who won the last Eastern Conference Finals?", "Led by who?", "Who has how many rings?", "Which is currently worn by which PG:", 
-"Who was drafted by:", "Who\'s Point Guard is:", "Who also drafted:", "Who went to school with:", "Who was traded to the Pacers from:", 
+let questions = ["Who won the last Eastern Conference Finals?", "Led by who?", "Who has how many rings?", "Which is currently worn by which Point Guard:", 
+"Who was drafted by:", "Whose Point Guard is:", "Who also drafted:", "Who played for Indiana University with:", "Who was traded to the Pacers from:", 
 "Where he was teammates with former MVP:", "Who was teammates in UCLA with:", "Who was traded from:", "Where he played how many years:", 
 "Which is the same number of rings *answer* has:", "Who had the youngest MVP ever:", "But not unanimous like:", "Who\'s splash brother is:", 
 "Who went to Washington State like:", "Who grew up in Australia like:", "Who won ROY one year after:", "Who is teammates with the Greek Freak:",
