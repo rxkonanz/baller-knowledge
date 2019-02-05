@@ -23,10 +23,21 @@ var currentQuestion = 0;
 var currentAnswer = 0;
 var points = -1;
 var fouls = 0;
+var timeleft = 30;
 var correct = new Audio();
 correct.src = "mp3/correct.mp3";
 var incorrect = new Audio();
 incorrect.src = "mp3/incorrect.mp3";
+
+var downloadTimer = setInterval(function(){
+    $('#timer').text("Shot Clock: " + timeleft);
+    timeleft -= 1;
+    if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        alert("You ran out of time! Shoot your shot!");
+        window.location.replace("https://rxkonanz.github.io/baller-knowledge/outoftime.html");
+    }
+}, 1000);
 
 function nextQuestion() {
     $('#question').text(questions[currentQuestion]);
@@ -34,6 +45,8 @@ function nextQuestion() {
     currentAnswer++;
     points++;
     $("#points").text("Points: " + points);
+    timeleft = 30;
+    downloadTimer();
 }
 $(document).ready(function() {
     $("#next-question").click(function(e){
