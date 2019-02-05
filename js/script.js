@@ -36,7 +36,7 @@ var downloadTimer = setInterval(function(){
     if(timeleft <= 0){
         clearInterval(downloadTimer);
         alert("You ran out of time! Shoot your shot!");
-        window.location.replace("https://rxkonanz.github.io/baller-knowledge/outoftime.html");
+        window.location.reload(true);
     }
 }, 1000);
 
