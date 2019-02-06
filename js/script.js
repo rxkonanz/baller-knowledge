@@ -39,6 +39,7 @@ function downloadTimer() {
         if(timeleft <= 0){
             incorrect.play();
             alert("You ran out of time! Keep your eyes on the clock!");
+            window.localStorage.setItem('points', points);
             window.location.replace("https://rxkonanz.github.io/baller-knowledge/loser.html");
             //window.location.reload(true);
         }
