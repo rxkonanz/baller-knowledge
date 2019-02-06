@@ -28,8 +28,10 @@
     height: 500px;
     width: auto;
 }
+.parent {
+    padding: 0 4%;
+}
 .row{
-    background-color: #F1F3F4;
     display: flex;
     justify-content: center;
 }
@@ -39,6 +41,10 @@
 }
 
 /* IDs */
+#curved-div {
+    background-color: #F1F3F4;
+    border-radius: 30px;
+}
 #fouls {
     color: red;
     font-weight: bold;
