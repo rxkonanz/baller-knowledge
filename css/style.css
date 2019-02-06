@@ -309,6 +309,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .parent {
+        padding: 0;
+    }
     .selection {
       width: 150;
     }
