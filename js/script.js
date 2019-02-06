@@ -19,6 +19,7 @@ let correctAnswers = ["nbalogo", "cavaliers", "lebronjames", "three", "chrispaul
 "kristapsporzingis", "lukadoncic", "one", "two", "deandreayton", "devinbooker", "kobebryant", "eight", "ten", "justicewinslow",
 "dwyanewade", "dirknowitzki", "vincecarter", "donovanmitchell"];
 
+var cheating = false;
 var currentQuestion = 0;
 var currentAnswer = 0;
 var points = -1;
@@ -52,6 +53,21 @@ function nextQuestion() {
     timeleft = 30;
     downloadTimer();
 }
+
+function cheat() {
+    /*for(var i = 0; i < correctAnswers.length; i++){
+        let currentSelection = correctAnswers[i]; 
+        let answer = $('#'+currentSelection);
+        answer.addClass('clicked');
+    }*/
+    cheating = true;
+    let toClick = correctAnswers[currentAnswer];
+    $('#'+toClick).addClass('clicked');
+    $('#question').text(questions[currentAnswer+1]);
+    currentAnswer++;
+    
+}
+
 $(document).ready(function() {
     $("#next-question").click(function(e){
         $('#question').text(questions[currentQuestion]);
@@ -66,7 +82,9 @@ $(document).ready(function() {
             else{
                 $(this).addClass("clicked");
                 correct.play();
-                nextQuestion();
+                if(cheating==false){
+                    nextQuestion();
+                }
             }
         }
         else{
