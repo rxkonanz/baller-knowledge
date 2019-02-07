@@ -40,7 +40,7 @@ function downloadTimer() {
     timeInterval = setInterval(function(){
         $('#timer').text("Shot Clock: " + timeleft);
         timeleft -= 1;
-        if(timeleft <= 0){
+        if(timeleft <= -1){
             incorrect.play();
             alert("You ran out of time! Keep your eyes on the clock!");
             window.localStorage.setItem('points', points);

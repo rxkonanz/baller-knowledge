@@ -11,15 +11,12 @@
 .container {
     text-align: center;
 }
-.selection {
-    display: inline-block;
-    height: 100px;
-    margin: 10px 0;
-    width: 12.5%;
-    transition: transform .2s;
+.curved-div {
+    background-color: #F1F3F4;
+    border-radius: 30px;
 }
-.selection:hover {
-    transform: scale(1.2);
+.game-page {
+    background-image: url('../img/background4.jpg');
 }
 .ender-statement{
     margin-top: 20px;
@@ -35,26 +32,33 @@
     display: flex;
     justify-content: center;
 }
+.selection {
+    display: inline-block;
+    height: 100px;
+    margin: 10px 0;
+    width: 12.5%;
+    transition: transform .2s;
+}
+.selection:hover {
+    transform: scale(1.2);
+}
 .toprow {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 /* IDs */
-#curved-div {
-    background-color: #F1F3F4;
-    border-radius: 30px;
-}
 #fouls {
     color: red;
     font-weight: bold;
 }
-#game-page {
-    background-image: url('../img/background4.jpg');
-}
 #logo-div {
     display: flex;
     justify-content: center;
+}
+#loser-logo {
+    padding: 20px 0;
+    width: 5%;
 }
 #points {
     color: white;
