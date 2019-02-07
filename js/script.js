@@ -19,7 +19,11 @@ let correctAnswers = ["nbalogo", "cavaliers", "lebronjames", "three", "chrispaul
 "kristapsporzingis", "lukadoncic", "one", "two", "deandreayton", "devinbooker", "kobebryant", "eight", "ten", "justicewinslow",
 "dwyanewade", "dirknowitzki", "vincecarter", "donovanmitchell"];
 
-var cheating = false;
+let players = ["lebronjames", "chrispaul", "kembawalker", "codyzeller", "victoroladipo", "russellwestbrook", "kevinlove",
+"derrickrose", "stephcurry", "klaythompson", "aronbaynes", "bensimmons", "malcolmbrogdon", "giannis", "joelembiid", "pascalsiakam",
+"kawhileonard", "demarderozan", "kylelowry", "carmeloanthony", "jamesharden", "anthonydavis", "kristapsporzingis", "lukadoncic",
+"deandreayton", "devinbooker", "kobebryant", "justicewinslow", "dwyanewade", "dirknowitzki", "vincecarter", "donovanmitchell"];
+
 var currentQuestion = 0;
 var currentAnswer = 0;
 var points = -1;
@@ -57,20 +61,29 @@ function nextQuestion() {
 }
 
 function cheat() {
-    /*for(var i = 0; i < correctAnswers.length; i++){
-        let currentSelection = correctAnswers[i]; 
-        let answer = $('#'+currentSelection);
-        answer.addClass('clicked');
-    }*/
-    cheating = true;
     let toClick = correctAnswers[currentAnswer];
     $('#'+toClick).addClass('clicked');
-    $('#question').text(questions[currentAnswer+1]);
-    currentAnswer++;
-    
+    nextQuestion();
+}
+
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
 }
 
 $(document).ready(function() {
+    var allPlayers = $('.player');
+    allPlayers = shuffle(allPlayers);
+
+    for(var i = 0; i < allPlayers.length; i++){
+        //console.log(allPlayers[i]);
+        var thisPlayer = allPlayers[i];
+        $(thisPlayer).attr("id", players[i]);
+    }
+    
     $("#next-question").click(function(e){
         $('#question').text(questions[currentQuestion]);
         currentQuestion++;
@@ -84,9 +97,7 @@ $(document).ready(function() {
             else{
                 $(this).addClass("clicked");
                 correct.play();
-                if(cheating==false){
-                    nextQuestion();
-                }
+                nextQuestion();
             }
         }
         else{
