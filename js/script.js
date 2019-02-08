@@ -33,6 +33,8 @@ let correct = new Audio();
 correct.src = "mp3/correct.mp3";
 let incorrect = new Audio();
 incorrect.src = "mp3/incorrect.mp3";
+let themeSong = new Audio();
+themeSong.src = "mp3/themesong.mp3";
 let timeInterval;
 
 function downloadTimer() {
@@ -91,7 +93,12 @@ $(document).ready(function() {
     $(".selection").click(function(e){
         var id = $(this).attr("id");
         if(id==correctAnswers[currentAnswer]){
-            if(id==correctAnswers[correctAnswers.length-1]){
+            if(id=="nbalogo"){
+                themeSong.play();
+                $(this).addClass("clicked");
+                nextQuestion();
+            }
+            else if(id==correctAnswers[correctAnswers.length-1]){
                 window.location.replace("https://youtu.be/InGtiEXQyF0?t=52");
             }
             else{
